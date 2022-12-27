@@ -1,6 +1,14 @@
 # iTerm Scripts
 Quick scripts for iTerm to help your daily workflow
 
+### Prerequisites
+Install Iterm2 Python Runtime environment
+
+### Create Python Script
+- Select Scripts > Manage > New Python Script
+- Select Basic
+- Copy and paste the script in repo
+
 ### Layout(s)
 
 #### 1-3 Pane Split
