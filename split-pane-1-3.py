@@ -25,17 +25,17 @@ async def main(connection):
 
         # Right Pane
         paneRight = await session.async_split_pane(vertical=True)
-        await session.async_send_text('cd /your-path-here\n')
-        await session.async_send_text('enter command here\n')
-        await session.async_send_text('enter command here\n')
+        await paneRight.async_send_text('cd /your-path-here\n')
+        await paneRight.async_send_text('enter command here\n')
+        await paneRight.async_send_text('enter command here\n')
 
         paneRight2 = await paneRight.async_split_pane(vertical=False)
-        await session.async_send_text('cd /your-path-here\n')
-        await session.async_send_text('command here\n')
+        await paneRight2.async_send_text('cd /your-path-here\n')
+        await paneRight2.async_send_text('command here\n')
 
         paneRight3 = await paneRight2.async_split_pane(vertical=False)
-        await session.async_send_text('cd /your-path-here\n')
-        await session.async_send_text('command here\n')
+        await paneRight3.async_send_text('cd /your-path-here\n')
+        await paneRight3.async_send_text('command here\n')
         
     else:
         # You can view this message in the script console.
